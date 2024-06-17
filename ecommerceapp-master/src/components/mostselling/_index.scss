@@ -1,0 +1,67 @@
+
+.frame-wrapper{
+
+    .content{
+        display: flex;
+        flex-direction: column;
+
+    
+        &-frist{
+            display: flex;
+            justify-content: space-between;
+            padding:1.3rem 4rem ;
+            border-bottom: 3px solid 
+            #C6C4C4;
+            margin-bottom: 1rem;
+
+    
+            &--title{
+                       font-weight: 700;
+                       font-size: 1.5rem;
+                       
+    
+            }
+    
+            &--button{
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+        }
+    
+        &-second{
+            display: flex;
+            gap: 5.7px;
+
+            &--solocard{
+                     
+                &_image{
+                    height: 10.57rem ;
+                    width:10.57rem ;
+
+                }
+
+                &_list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2rem;
+
+                    &__price{
+                        font-weight: 500;
+                        font-size: 1.63rem;
+                    }
+
+
+                    &__minorder{
+                        font-weight: 400;
+                        font-size: 0.82rem;
+                    }
+                }
+            }
+        }
+    
+    }
+
+}
+
+

@@ -1,0 +1,60 @@
+.bgscontainer {
+  display: flex;
+  justify-content: center;
+  padding: 1.8rem 0;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+  &-line {
+    border: 2px solid#C6C4C4;
+    width: 100%;
+  }
+
+  .frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+
+    &--name {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+    &--viewall {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  &-image {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.7rem;
+
+    &--solocard {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+
+      &_list {
+        display: flex;
+        flex-direction: column;
+
+        &__minorder {
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+
+        &__price {
+          font-weight: 500;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}

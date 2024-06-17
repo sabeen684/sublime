@@ -1,0 +1,76 @@
+.bigcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fafc;
+  padding: 4rem;
+
+  .Rlogin {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding:2.5rem 1.5rem;
+    background: #f4f4f4;
+    box-shadow: 2px 4px 2px #eaeaea;
+    width:500px;
+
+
+    &-logo {
+    display: flex;
+    justify-content: center;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      align-items: center;
+
+      &--main {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+      &--titles {
+        font-weight: 300;
+        font-size: 1rem;
+      }
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+
+      &--title {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        color: orangered;
+      }
+    }
+
+    & input {
+      border: 1px solid #c6c4c4;
+      height: 2.5rem;
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      button {
+        width: 100%;
+        border-radius: 0.8rem;
+        height: 4.1rem;
+      }
+      &--account {
+        color: orangered;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+// .bgmessagecontainer {
+//     display: flex;
+//     justify-content: center;
+//     .inbox {
+//         background-color: $white-color;
+//         padding: 4rem 2rem;
+//         margin-top: 1rem;
+//         &-header {
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+
+//             width: 100%;
+//             border-bottom: $border;
+//             padding-bottom: 1.25rem;
+//             color: $black-color;
+//             &--left {
+//                 display: flex;
+//                 align-items: center;
+//                 gap: 1rem;
+//                 & .fa-chevron-left {
+//                     background-color: $background-color;
+//                     padding: 0.5rem;
+//                 }
+//                 & p {
+//                     font-weight: 600;
+//                     font-size: 1.25rem;
+//                 }
+//             }
+//             &--right {
+//                 display: flex;
+//                 align-items: center;
+//                 // padding: 0 0.8rem;
+//                 border: $border;
+//                 border-radius: $border-radius;
+//                 background: $background-color;
+//                 & .fa-print,
+//                 .fa-star {
+//                     font-size: 1.25rem;
+//                     border-right: $border;
+//                     padding: 1rem;
+//                 }
+//                 & .fa-trash {
+//                     font-size: 1.25rem;
+//                     padding: 1rem;
+//                 }
+//             }
+//         }
+//         &-chat {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 2.5rem;
+//             padding: 2rem 0rem 0rem 0rem;
+//             .received {
+//                 align-self: flex-start;
+//                 width: 52%;
+//             }
+//             .sent {
+//                 align-self: flex-end;
+//                 width: 52%;
+//             }
+//             &--messagebody {
+//                 display: flex;
+//                 gap: 1rem;
+//                 &_imagecontainer {
+//                     height: 2.5rem;
+//                     aspect-ratio: 1;
+//                     align-self: flex-end;
+//                     & .image {
+//                         height: 100%;
+//                         width: 100%;
+//                         border-radius: 50%;
+//                     }
+//                 }
+//                 & .messagesent {
+//                     background-color: $primary-color;
+//                     border-radius: 1rem 1rem 0rem 1rem;
+//                     color: $white-color;
+//                 }
+//                 & .messagereceived {
+//                     background-color: $background-color;
+//                     border-radius: 1rem 1rem 1rem 0rem;
+//                     color: $black-color;
+//                 }
+//                 &_message {
+//                     padding: 1.25rem;
+//                     &__time {
+//                         display: flex;
+//                         justify-content: flex-end;
+//                         gap: 1rem;
+//                         align-items: center;
+//                     }
+//                 }
+//             }
+//             &--write {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-between;
+//                 border-top: 1px solid rgba($color: $black-color, $alpha: 0.2);
+//                 padding-top: 1rem;
+//                 & .fa-microphone,
+//                 .fa-paperclip,
+//                 .fa-file-image {
+//                     color: rgba($color: $black-color, $alpha: 0.5);
+//                     font-size: 1.25rem;
+//                 }
+//                 input {
+//                     border: none !important;
+//                     color: rgba($color: $black-color, $alpha: 0.5);
+//                 }
+//                 &_button {
+//                     width: 100px;
+//                     position: relative;
+//                     & .fa-paper-plane {
+//                         position: absolute;
+//                         top: 30%;
+//                         right: 15%;
+//                         color: $white-color;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.bg {
+    display: flex;
+    justify-content: center;
+    .inbox {
+        background-color: $white-color;
+        width: 100%;
+        padding: 4rem 2rem;
+        margin-top: 1rem;
+        &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // width: 75%;
+            border-bottom: $border;
+            padding-bottom: 1.25rem;
+            color: $black-color;
+            &--left {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                & .fa-chevron-left {
+                    background-color: $background-color;
+                    padding: 0.5rem;
+                }
+                & p {
+                    font-weight: 600;
+                    font-size: 1.25rem;
+                }
+            }
+            &--right {
+                display: flex;
+                align-items: center;
+                padding: 0 0.8rem;
+                border: $border;
+                border-radius: $border-radius;
+                background-color: $background-color;
+                & .fa-print,
+                .fa-star,
+                .fa-trash {
+                    font-size: 1.25rem;
+                    border-right: $border;
+                    padding: 0.8rem;
+                }
+                & .fa-trash {
+                    border: none;
+                }
+            }
+        }
+        &-chat {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            padding-top: 2.5rem;
+            // height: 45rem;
+            // overflow-y: scroll;
+            padding: 1rem 0;
+            width: 100%;
+            .received {
+                align-self: flex-start;
+                width: 52%;
+            }
+            .sent {
+                align-self: flex-end;
+                width: 52%;
+                display: flex;
+                justify-content: right;
+            }
+            &--messagebody {
+                display: flex;
+                gap: 1rem;
+                &_imagecontainer {
+                    height: 2.5rem;
+                    aspect-ratio: 1;
+                    align-self: flex-end;
+                    & .image {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                & .messagesent {
+                    background: $primary-color;
+                    border-radius: 1rem 1rem 0rem 1rem;
+                    color: $white-color;
+                }
+                & .messagereceived {
+                    background-color: $background-color;
+                    border-radius: 1rem 1rem 1rem 0rem;
+                    color: $black-color;
+                }
+                &_message {
+                    padding: 1.25rem;
+                    &__time {
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 1rem;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        &-write {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba($color: $black-color, $alpha: 0.2);
+            padding-top: 1rem;
+            & .fa-microphone,
+            .fa-paperclip,
+            .fa-file-image {
+                color: rgba($color: $black-color, $alpha: 0.5);
+                font-size: 1.25rem;
+            }
+            input {
+                border: none !important;
+                color: rgba($color: $black-color, $alpha: 0.5);
+            }
+            &--button {
+                width: 100px;
+                position: relative;
+                & .fa-paper-plane {
+                    position: absolute;
+                    top: 30%;
+                    right: 15%;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}

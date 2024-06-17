@@ -1,0 +1,98 @@
+.bigcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fafc;
+    padding: 4rem;
+  
+    .Wlogin {
+      display: flex;
+
+    flex-direction: column;
+    gap: 1.5rem;
+    padding:2.5rem 1.5rem;
+    background: #f4f4f4;
+    box-shadow: 2px 4px 2px #eaeaea;
+    width:500px;
+
+  
+      &-logo {
+        display: flex;
+        justify-content: center;
+      }
+  
+      &-title {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        align-items: center;
+  
+        &--main {
+          font-weight: 700;
+          font-size: 2rem;
+        }
+        &--titles {
+          font-weight: 300;
+          font-size: 1rem;
+        }
+      }
+  
+      &-form {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1.4rem;
+
+        align-items: center;
+      
+        &--input {
+          
+          width: 100%;
+          border-color: #c6c4c4 !important;
+          &__place {
+            width: 100%;
+          }
+         
+          }
+        
+        }
+        & input{
+          border: 1px solid #C6C4C4;
+          
+        }
+      
+      &-button {
+        display: flex;
+        justify-content: center;
+        
+        flex-direction: column;
+        gap: 1rem;
+        button {
+          width: 100% !important;
+          border-radius: 0.8rem;
+
+        }
+        &--loginfield,
+        &--forgotfield{
+          display: flex;
+          font-size: 1.1rem;
+  &__text{
+       color: orangered;
+       font-weight: 600;
+       font-size: 1.1rem;
+   }
+  } 
+  &--loginfield{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+      &--forgotfield{
+        display: flex;
+        justify-content: flex-end;
+      }
+      }
+    }
+    }
+  
+  

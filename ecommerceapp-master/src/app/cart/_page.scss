@@ -1,0 +1,253 @@
+.bgcartcontainer {
+  display: flex;
+  justify-content: center;
+  background-color: $white-color;
+  color: $black-color;
+
+  .cart {
+    width: 100%;
+    &-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3.5rem 0rem 6rem 0rem;
+      gap: 2rem;
+
+      &--name {
+        font-weight: 500;
+        font-size: 3.4rem;
+      }
+      &--choose {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 600;
+        gap: 2rem;
+
+        &_shopping,
+        &_checkout,
+        &_order {
+          display: flex;
+          width: 256px;
+          gap: 0.8rem;
+
+          &__number {
+            height: 44px;
+            width: 44px;
+            color: $white-color;
+            // border: 2.5rem;
+            background-color: $black-color;
+            border-radius: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+
+          &__name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    &-content {
+      width: 100%;
+      &--product {
+        display: flex;
+        // flex: 70% 30%;
+        gap: 64px;
+
+        &_table {
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem 0rem;
+
+          &__th {
+            border-bottom: 0.0625rem #6c7275 solid;
+          }
+
+          &__buttondiv {
+            border: 0.0625rem #6c7275 solid;
+            height: 2rem;
+            width: 5.6rem;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-item {
+              padding: 0 0.6rem;
+            }
+          }
+
+          & table {
+            width: 100%;
+            border-collapse: collapse;
+            tr {
+              &:not(:last-child) {
+                border-bottom: 0.0625rem solid #e8ecef;
+              }
+            }
+
+            th {
+              padding: 1.5rem;
+              text-align: left;
+            }
+
+            td {
+              padding: 1.5rem;
+            }
+          }
+
+          &__imgdetail {
+            display: flex;
+            width: 19.75rem;
+
+            &-details {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              width: 13.15rem;
+              padding-left: 1rem;
+              padding-top: 0.4rem;
+
+              &--first {
+                font-size: 0.9rem;
+                font-weight: 600;
+              }
+              &--second {
+                font-size: 0.75rem;
+                color: #6c7275;
+              }
+
+              &--third {
+                button {
+                  border: none;
+                  background-color: transparent;
+                  color: #605f5f;
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  height: 24px;
+                  width: 87px;
+                  cursor: pointer;
+
+                  span {
+                    display: flex;
+                    gap: 8px;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 600;
+                    font-size: 14px;
+                    .rma {
+                      font-size: 18px;
+                      font-weight: 400;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &_cartsummary {
+          border: 0.0625rem solid gray;
+          display: flex;
+          height: 500px;
+          flex-direction: column;
+          border-radius: 0.4rem;
+          padding: 1rem;
+
+          &__title {
+            padding: 0.5rem 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+          }
+
+          &__radio {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 1rem;
+
+            &-freeshipping {
+              display: flex;
+              justify-content: space-between;
+              border: 0.0625rem black solid;
+              border-radius: 0.25rem;
+              height: 3.2rem;
+              align-items: center;
+              padding-right: 1rem;
+              padding: 1rem;
+              border-radius: 0.4rem;
+              padding-left: 0.6rem;
+              padding-right: 0.6rem;
+
+              &--label {
+                display: flex;
+                gap: 0.6rem;
+              }
+            }
+            &-branchshipping {
+              display: flex;
+              justify-content: space-between;
+              height: 3.2rem;
+              align-items: center;
+              border: 1px black solid;
+              padding-right: 1rem;
+              padding-left: 1rem;
+              border-radius: 6px;
+
+              &--label {
+                display: flex;
+                gap: 0.6rem;
+              }
+            }
+            &-homeshipping {
+              display: flex;
+              justify-content: space-between;
+              height: 3.2rem;
+              align-items: center;
+              border: 0.0625rem black solid;
+              padding-right: 1rem;
+              padding-left: 1rem;
+              border-radius: 0.4rem;
+
+              &--label {
+                display: flex;
+                gap: 0.6rem;
+              }
+            }
+          }
+
+          &__subtotal {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px gray solid;
+
+            &-price {
+              font-weight: 600;
+              font-size: 1.2rem;
+            }
+          }
+          &__total {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            font-weight: 600;
+            font-size: 1.25rem;
+            padding: 1.5rem 1rem 2rem 1rem;
+          }
+
+          &__checkout {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+}

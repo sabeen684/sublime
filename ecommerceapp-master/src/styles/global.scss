@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+// :root {
+//   font-size: 62.5%;
+// }
+
+// body {
+//   font-size: 1.6rem;
+// }
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+@import "colors";
+@import "fonts";
+@import "default";
+@import "keyframe";
+@import "../components/components";
+@import "../ui/ui";
+@import "../app/page";
+@import "../app/cart/page";
+@import "../app/wholesaler/auth/signup/page";
+@import "../app/auth/login/page";
+@import "../app/auth/signup/page";
+@import "../app/wholesaler/auth/login/page";
+@import "../app/auth/forgot-password/page";
+@import "../app/auth/resetpassword/page";
+@import "../app/auth/success/page";
+@import "../app/order/page";
+@import "../app/auth/otppage/page";
+@import "../app/wholesaler/auth/otppage/page";
+@import "../app/wholesaler/auth/forgot-password/page";
+@import "../app/wholesaler/auth/resetpassword/page";
+@import "../app/wholesaler/auth/success/page";
+@import "../app/profile/page";
+@import "../app/profile/address/page";
+@import "../app/profile/followed-store/page";
+@import "../app/profile/recent-orders/page";
+@import "../app/profile/my-returns/page";
+@import "../app/profile/my-cancellations/page";
+@import "../app/product/[slug]/page";
+@import "../app/profile/track-order/page";
+@import "../app/notification/page";
+@import "../app/message/page";
+@import "../app/test/page";
+@import "../app/store/page";

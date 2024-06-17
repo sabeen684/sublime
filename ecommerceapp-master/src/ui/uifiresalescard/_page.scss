@@ -1,0 +1,130 @@
+.firecard {
+    display: flex;
+    // box-shadow: 1px 2px 1px 2px gray;
+
+    .pacifico {
+        font-family: "Pacifico", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .card {
+        width: 14.6rem;
+        display: flex;
+        flex-direction: column;
+
+        &-image {
+            width: 14.6rem;
+            height: 13.8rem;
+
+            & img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 0.4rem;
+                border-top-right-radius: 0.4rem;
+            }
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            padding: 0.1rem;
+            flex: 1;
+
+            &--title {
+                display: flex;
+                font-weight: 500;
+                flex-direction: column;
+
+                &_b1 {
+                    background: $primary-color;
+                    width: 3.2rem;
+                    height: 1.2rem;
+                    padding: 3px 10.43px 3px 10.43px;
+                    font-size: 0.8rem;
+                    color: white;
+                    border-radius: 0.4rem;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &_name {
+                    font-size: 0.9rem;
+                }
+            }
+
+            &--price {
+                font-size: 1.2rem;
+                padding: 0.2rem;
+                display: flex;
+                justify-content: flex-start;
+                gap: 0.8rem;
+
+                &_cutprice {
+                    display: flex;
+                    // justify-content: flex-start;
+                    gap: 0.8rem;
+
+                    &__oldprice {
+                        color: $opacity-color;
+                        font-size: 0.9rem;
+                        margin-top: 0.15rem;
+                    }
+                }
+
+                &_sold {
+                    font-size: 0.7rem;
+                    font-weight: normal;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 0.13rem;
+                }
+            }
+
+            &--left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem 0;
+                align-items: center;
+                margin-top: auto;
+                &_sold {
+                    background: rgba($color: orangered, $alpha: 0.3);
+                    height: 1rem;
+                    width: 100%;
+                    border-radius: 0.7rem;
+                    &__remaining {
+                        background: $primary-color;
+                        width: 60%;
+                        height: 100%;
+                        border-radius: 0.7rem;
+                        color: $white-color;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+            &--delivery {
+                color: #448ee4;
+                background-color: green($color: #000000);
+                font-size: 0.7rem;
+                padding: 0rem 0.2rem;
+                display: flex;
+                justify-content: space-between;
+                // flex: 1;
+            }
+        }
+    }
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}

@@ -1,0 +1,63 @@
+$primary-color: linear-gradient(142.6deg, #FF4438 17.12%, #FD8169 52.01%);
+$secondary-color: linear-gradient(180deg, #53D9E3 0%, #0D5CB0 100%) ;
+$alpha-primary-color: #334449;
+$white-color: #ffffff;
+$black-color: #181818;
+$background-color: #f6f6f6;
+$error-color: #9a3232;
+$success-color: #1c5525;
+$warning-color: #796729;
+$opacity-color:rgba($color:$black-color, $alpha:0.7);
+$grey-color:#808080;
+$orange-color:#ff4538;
+
+
+$black: #181818;
+$white: #fff;
+
+$border-radius: 12px;
+$text-white: rgba(
+  $color: $white-color,
+  $alpha: 0.7,
+);
+
+$border-grey:rgba(
+     $color:$grey-color,
+     $alpha: 0.1,
+);
+$input-grey:rgba(
+  $color:$grey-color,
+  $alpha:0.4,
+);
+
+$text-black: rgba(
+  $color: $black-color,
+  $alpha: 0.7,
+);
+// $text-primary: rgba(
+//   $color: $primary-color,
+//   $alpha: 0.7,
+// );
+$text-error: rgba(
+  $color: $error-color,
+  $alpha: 0.7,
+);
+$text-success: rgba(
+  $color: $success-color,
+  $alpha: 0.7,
+);
+$text-warning: rgba(
+  $color: $warning-color,
+  $alpha: 0.7,
+);
+
+$border: 0.5px solid #d5d5d5;
+$border-dashed: 1px dashed #444;
+$border-black: 0.5px solid #444;
+$border-error: 0.5px solid $error-color;
+$border-success: 0.5px solid $success-color;
+$border-primary: 0.5px solid $primary-color;
+$box-shadow: 0px 0px 0.9310142993927002px 0px rgba(255, 255, 255, 0.17),
+  0px 0px 3.1270833015441895px 0px rgba(255, 255, 255, 0.08),
+  0px 7px 14px 0px rgba(255, 255, 255, 0.05);
+$border-radius: 10px;

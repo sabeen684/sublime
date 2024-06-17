@@ -1,0 +1,108 @@
+.bgfollowstorecontainer {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0rem 3rem 0rem;
+
+  .frame-wrapper {
+  }
+  .followstore {
+    display: flex;
+    gap: 24px;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 933px;
+
+      &--info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: 619px;
+        padding: 70px 32px;
+        border: 1px solid #b9b9b9;
+        border-radius: 0 0 14px 14px;
+        &_heading {
+          display: flex;
+          gap: 18px;
+          &__title {
+          
+            font-size: 24px;
+            font-weight: 700;
+
+            
+          }
+        }
+
+        &_storetab {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 1rem;
+          width: 100%;
+
+          &__content {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f9f7f7;
+            padding: 0.8rem 1.5rem;
+            border-radius: 16px;
+            width: 100%;
+            box-shadow: 2px 4px 2px #0000000f;
+
+            &-imgnamefield {
+              display: flex;
+              gap: 1rem;
+              font-size: 18px;
+              font-weight: 600;
+              align-items: center;
+              justify-content: flex-start;
+              img {
+                width: 72px;
+                height: 72px;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+              &--name {
+                text-align: center;
+              }
+            }
+            &-buttonfield {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              justify-content: flex-end;
+
+              button {
+                width: 121px;
+                height: 35px;
+                font-size: 0.9rem;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+
+      &--pagination {
+        display: flex;
+        justify-content: space-between;
+
+        &_pagenumber {
+          font-size: 0.9rem;
+          color: #202224;
+          // padding: 0rem 2rem;
+        }
+        &_button {
+          & button {
+            width: 43px;
+            height: 30px;
+            border-radius: 6px;
+            border: 0.6px solid #d5d5d5;
+          }
+        }
+      }
+    }
+  }
+}

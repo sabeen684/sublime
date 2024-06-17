@@ -1,0 +1,27 @@
+.bgnavcontainer {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0rem;
+
+  .frame-wrapper {
+  }
+  .navbtn {
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+
+    &-btn {
+      background-color: #f3f9fb;
+      white-space: nowrap;
+      height: 2.2rem;
+      border-radius: 1.1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: none;
+    }
+    &-btn:active:focus {
+      background-color: orangered;
+      color: white;
+    }
+  }
+}

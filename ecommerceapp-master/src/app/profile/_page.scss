@@ -1,0 +1,60 @@
+.bgprofilecontainer{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+
+    .frame-wrapper{
+
+    }
+.profile{
+    display: flex;
+    gap: 24px;
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 70px 32px;
+        border: 1px solid #B9B9B9;
+        height: 420px;
+        border-radius:0 0 14px 14px ;
+
+        input{
+            width: 411px;
+            border: 1px solid #D8D8D8;
+            background-color: #F1F4F9;
+        }
+
+        &--heading{
+            display: flex;
+            gap: 18px;
+            &_title{
+             font-size: 24px;
+             font-weight: 700;     
+            }
+
+
+        }
+
+        &--namephfield,
+        &--emailfield
+        {
+            display: flex;
+            flex: 50% 50%;
+            gap: 36px;
+        }
+
+        &--savechangefield{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                width: 180px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+
+}
+}

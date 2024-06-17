@@ -1,0 +1,128 @@
+.bgreturncontainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0rem;
+
+  .frame-wrapper {
+  }
+  .myreturn {
+    display: flex;
+    gap: 24px;
+
+    &-content {
+      width: 100%;
+      max-width: 922px;
+      gap: 24px;
+      display: flex;
+      flex-direction: column;
+
+      &--info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 3rem 3rem 1.5rem 3rem;
+        border: 1px solid #b9b9b9;
+        // height: 670px;
+        border-radius: 0 0 14px 14px;
+
+        &_title {
+          display: flex;
+          justify-content: space-between;
+          font-size: 24px;
+          font-weight: 700;
+
+          &__select {
+            width: 200px;
+            height: 1.5rem;
+          }
+        }
+
+        &_table {
+          // display: flex;
+          overflow-x: auto;
+          font-size: 14px;
+
+          &__con {
+            width: 100%;
+            border-collapse: collapse;
+
+            .headers {
+              border-radius: 8px 8px 0 0;
+              border: 0.6px solid #d5d5d5;
+              padding: 1rem 0.2rem;
+
+              & th {
+                text-align: left;
+                flex-wrap: nowrap;
+                padding: 1rem 0.8rem;
+                white-space: nowrap;
+              }
+            }
+
+            & tr {
+              border-bottom: black;
+              padding: 1rem 0rem;
+              &:not(:last-child) {
+                border-bottom: 0.0625rem solid #e8ecef;
+              }
+
+              .name {
+                width: 109px;
+                text-align: center;
+                padding: 0rem 0.5rem;
+              }
+
+              .quantity {
+                text-align: center;
+                padding: 0rem 0.8rem;
+                width: 1rem;
+              }
+
+              .category {
+                width: 75px;
+                padding: 0rem 0.8rem;
+
+                // flex-wrap: wrap;
+              }
+            }
+
+            & td {
+              text-align: left;
+              flex-wrap: nowrap;
+              padding: 1rem 0.5rem;
+              border-spacing: 1rem;
+
+              & button {
+                border: 0.6px solid #d5d5d5;
+                color: #035b4e;
+                font-size: 14px;
+                background-color: #fafbfd;
+                padding: 0.4rem;
+                border-radius: 8px;
+                cursor: pointer;
+                background-color: #9ce3d8;
+              }
+            }
+          }
+        }
+      }
+      &--pagination {
+        display: flex;
+        justify-content: space-between;
+
+        &_pagenumber {
+          font-size: 0.9rem;
+          color: #202224;
+        }
+        &_button {
+          & button {
+            width: 43px;
+            height: 30px;
+            border-radius: 6px;
+            border: 0.6px solid #d5d5d5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use "sass:math";
+
+@mixin fw($weight...) {
+  @each $w in $weight {
+    &-#{$w} {
+      font-weight: $w !important;
+    }
+  }
+}
+
+@mixin fs($size...) {
+  @each $s in $size {
+    &-#{$s} {
+      font-weight: math.div($s, 100) + rem !important;
+    }
+  }
+}
+
+$colors: (
+  "error": #9a3232,
+  "success": #1c5525,
+  "warning": #796729
+);
+
+.font {
+  &-w {
+    @include fw(100, 200, 300, 400, 500, 600, 700, 800, 900);
+  }
+
+  &-c {
+    @each $name, $value in $colors {
+      &-#{$name} {
+        color: $value !important;
+      }
+    }
+  }
+
+  &-s {
+    @include fs(72, 80, 82, 92, 100, 112, 120, 125, 150, 172, 175, 180, 200, 225);
+  }
+}
+
+.authfont {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

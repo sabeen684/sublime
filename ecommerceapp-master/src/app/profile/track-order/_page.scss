@@ -1,0 +1,78 @@
+.bgtrackcontainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0rem;
+
+  .frame-wrapper {
+  }
+  .trackorder {
+    display: flex;
+    gap: 24px;
+    &-content {
+      width: 100%;
+      max-width: 922px;
+      gap: 24px;
+      display: flex;
+      flex-direction: column;
+      &--info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 3rem 3rem 1.5rem 3rem;
+        border: 1px solid #b9b9b9;
+        // height: 670px;
+        border-radius: 0 0 14px 14px;
+
+        &_title {
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        &_progressbar {
+          display: flex;
+          // justify-content: space-between;
+          flex-direction: column;
+          width: 855px;
+          padding: 1rem;
+          justify-content: center;
+          border-radius: 16px;
+          gap: 2rem;
+
+          &__statecontent {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 1.5rem;
+
+            &-placeorder,
+            &-processing,
+            &-shipped,
+            &-delivered {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 1.5rem;
+              font-size: 0.9rem;
+
+              &--content {
+                display: flex;
+                gap: 1rem;
+
+                &_time {
+                  color: #757575;
+                  white-space: nowrap;
+                }
+                &_info {
+                  &__title {
+                    font-weight: 700;
+                  }
+                  &__descp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

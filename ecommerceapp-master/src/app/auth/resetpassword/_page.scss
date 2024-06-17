@@ -1,0 +1,86 @@
+.bigcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fafc;
+  padding: 83px 100px;
+
+  .resetpassword {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    box-shadow: 2px 4px 2px #eaeaea;
+     background-color: #f4f4f4;
+     width: 450px;
+     padding: 2.5rem 1.5rem;
+
+    &-logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      align-items: center;
+
+      &--main {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+      &--titles {
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    
+      &--input {
+        height: 2.5rem !important;
+        width: 100%;
+        border-color: #c6c4c4 !important;
+        &__place {
+          width: 100%;
+        }
+       
+        }
+      
+      }
+      & input{
+        border: 1px solid #C6C4C4;
+        // height: 3.875rem !important;
+      }
+   
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: 100% !important;
+        border-radius: 0.8rem;
+        height: 2.5rem;
+      }
+
+    }
+
+    &-signupfield{
+        display: flex;
+        justify-content: center;
+
+        &--link{
+          color: orangered;
+          font-weight: 600;
+        }
+    }
+
+  }
+  }
+

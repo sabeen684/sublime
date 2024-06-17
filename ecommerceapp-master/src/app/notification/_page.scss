@@ -1,0 +1,347 @@
+.bgnotcontainer {
+    display: flex;
+    justify-content: center;
+    .frame-wrapper {
+    }
+    .notification {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+
+        &-table {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                object-fit: cover;
+            }
+
+            &--titlefield {
+                display: flex;
+                flex-direction: column;
+
+                &_firstline {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 24px;
+
+                    &__title {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    &__icon {
+                        color: #ef3826;
+                    }
+                }
+                &_secondline {
+                    display: flex;
+                    justify-content: flex-start;
+                    font-weight: 600;
+                    padding: 8px 16px 8px 16px;
+
+                    &__span {
+                        border-bottom: 4px solid #ef3826;
+                        padding: 4px 2px 4px 2px;
+                        &-notnum {
+                            border-radius: 50%;
+                            padding: 2px 8px 2px 8px;
+                            background-color: #f2f4f7;
+                        }
+                    }
+                }
+            }
+
+            &--firstnot {
+                padding: 24px;
+                display: flex;
+                justify-content: space-between;
+                background-color: #feefee;
+                border-bottom: 1px solid #e2e8f0;
+
+                &_content {
+                    display: flex;
+                    gap: 1rem;
+
+                    &__image {
+                        display: flex;
+                        gap: 0.3rem;
+                        justify-content: center;
+                        align-items: center;
+
+                        &-dot {
+                            height: 8px;
+                            width: 8px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: red;
+                        }
+
+                        & img {
+                            height: 48px;
+                            width: 48px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &__message {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.6rem;
+                        &-content {
+                            font-weight: 600;
+                        }
+                        &-buttons {
+                            display: flex;
+                            gap: 8px;
+                            & button {
+                                height: 32px;
+                                width: 83px;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                            // .main{
+
+                            // }
+                        }
+                    }
+                }
+                &_ellipse {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.1rem;
+
+                    .iconss {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &--secondnot {
+                padding: 24px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #e2e8f0;
+
+                &_content {
+                    display: flex;
+                    gap: 1rem;
+
+                    &__image {
+                        & img {
+                            height: 48px;
+                            width: 48px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &__message {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.6rem;
+                        &-content {
+                            font-weight: 600;
+                        }
+                        &-secondary {
+                            display: flex;
+                            gap: 8px;
+
+                            &--line {
+                                height: 20px;
+                                border-right: 3px solid #e2e8f0;
+                            }
+                        }
+                    }
+                }
+                &_ellipse {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.1rem;
+
+                    .iconss {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &--thirdnot {
+                padding: 24px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #e2e8f0;
+
+                &_content {
+                    display: flex;
+                    gap: 1rem;
+
+                    &__image {
+                        & img {
+                            height: 48px;
+                            width: 48px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &__message {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.6rem;
+                        &-content {
+                            font-weight: 600;
+                        }
+                        &-secondary {
+                            display: flex;
+                        }
+                        &-button {
+                            & button {
+                                width: 87px;
+                                height: 32px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                &_ellipse {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.1rem;
+
+                    .iconss {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &--forthnot,
+            &--fifthnot {
+                padding: 24px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #e2e8f0;
+
+                &_content {
+                    display: flex;
+                    gap: 1rem;
+
+                    &__image {
+                        & img {
+                            height: 48px;
+                            width: 48px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &__message {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.6rem;
+                        &-content {
+                            font-weight: 600;
+                        }
+                        &-secondary {
+                            display: flex;
+                            gap: 8px;
+
+                            &--message {
+                                .mb {
+                                    color: orangered;
+                                }
+                            }
+                        }
+                    }
+                }
+                &_ellipse {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.1rem;
+
+                    .iconss {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &-pagination {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0rem 2rem 2rem;
+
+            &--pagenumber {
+                font-size: 0.9rem;
+                color: #202224;
+            }
+            &--button {
+                & button {
+                    width: 43px;
+                    height: 30px;
+                    border-radius: 6px;
+                    border: 0.6px solid #d5d5d5;
+                }
+            }
+        }
+    }
+}
+
+.notification-table--firstnot_ellipse,
+.notification-table--secondnot_ellipse,
+.notification-table--thirdnot_ellipse,
+.notification-table--forthnot_ellipse,
+.notification-table--fifthnot_ellipse {
+    position: relative;
+
+    .iconss {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        min-width: 190px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        top: 2.5rem;
+
+        .dropdown-item {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            background: none;
+            border: none;
+            text-align: left;
+            width: 100%;
+
+            &--content {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+    }
+}
+
+.tick {
+    color: orangered;
+    display: flex;
+}

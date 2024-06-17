@@ -1,0 +1,55 @@
+import { LAPTOP } from "@/constants/image";
+import shirt from "../../../public/./images/shirt.png";
+
+ export const cartdata=[
+{
+    id:1,
+    title:"Nike Airforce One Shadow Tendry colour",
+    img: LAPTOP,
+    color:"black", 
+    quantity:15,
+    price:2347,
+    brachshipping_price:150,
+    homeshipping_price:210,
+},
+{
+    id:2,
+    title:"Black Shoe",
+    img: LAPTOP,
+    color:"black", 
+    quantity:20,
+    price:2347,
+    brachshipping_price:150,
+    homeshipping_price:210,
+},
+{
+    id:3,
+    title:"3d Moon wallpaper",
+    img: LAPTOP,
+    color:"black", 
+    quantity:20,
+    price:2347,
+    brachshipping_price:150,
+    homeshipping_price:210,
+},
+{
+    id:4,
+    title:"3d Moon wallpaper",
+    img: LAPTOP,
+    color:"black", 
+    quantity:20,
+    price:2347,
+    brachshipping_price:150,
+    homeshipping_price:210,
+},
+{
+    id:5,
+    title:"3d Moon wallpaper",
+    img: LAPTOP,
+    color:"black", 
+    quantity:20,
+    price:2347,
+    brachshipping_price:150,
+    homeshipping_price:210,
+},
+ ]

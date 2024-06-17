@@ -1,0 +1,79 @@
+.bgotppage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 83px 100px;
+    .otpage{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       box-shadow: 2px 4px 2px #eaeaea;
+       background-color: #f4f4f4;
+      width: 529px;
+      gap:2rem ;
+      padding: 2.5rem 1.5rem;
+       &-logo{
+        
+        display: flex;
+        justify-content: center;
+        
+img{
+    height: 125px;
+        width: 285px;
+    object-fit: cover;
+    
+}
+       }
+       &-titlefield{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+           &--title{
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;;
+            font-weight: 700;
+    
+           }
+           &--descpfield{
+    color: #616161;
+    text-align: center;
+           }
+       }
+       &-inputfield{
+        display: flex; 
+         height: 2.5rem;
+        font-size: 1rem;
+        gap: 1rem;
+        width:fit-content !important;
+        justify-content: center;
+        align-items: center;
+        // margin: auto;
+        & input{
+            height: 2.5rem;
+            width: 3rem;
+            font-size: 1rem !important;
+
+        }
+
+       }
+       &-buttonfield{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+//   margin: auto;
+
+  button{
+    
+    border-radius: 12px;
+  }
+
+       }
+       &-resendfield{
+font-size: 1rem;
+display: flex;
+justify-content:center ;
+       }
+    }
+}
